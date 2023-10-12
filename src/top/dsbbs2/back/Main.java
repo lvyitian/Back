@@ -23,6 +23,11 @@ public class Main extends JavaPlugin implements Listener {
         instance=this;
     }
     public ConcurrentHashMap<UUID, Location> deathLocation=new ConcurrentHashMap<>();
+    @Override
+    public void onEnable()
+    {
+        Bukkit.getPluginManager().registerEvents(this,this);
+    }
     @EventHandler(priority= EventPriority.MONITOR,ignoreCancelled = true)
     public void onPlayerDeath(PlayerDeathEvent e)
     {
