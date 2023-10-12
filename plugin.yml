@@ -1,0 +1,8 @@
+name: Back
+version: 0.1
+author: lvyitian
+description: Add /back command
+main: top.dsbbs2.back.Main
+commands:
+  back:
+    usage: /back [player]
